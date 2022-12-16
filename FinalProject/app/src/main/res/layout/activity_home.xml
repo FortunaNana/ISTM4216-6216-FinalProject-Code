@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!--text view for displaying heading-->
+
+    <!--text view for displaying user name-->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="260dp"
+        android:id="@+id/GloBeauty2"
+        android:src="@drawable/glo_beauty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/idBtnLogin"
+        />
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GloBeauty2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:text="Welcome to GloBeauty"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/idTVQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeader"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Start Your Journey with Us..."
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp" />
+
+    <!--button for making user log out-->
+    <Button
+        android:id="@+id/idBtnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVQuote"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Beauty Testing"
+        android:textAllCaps="false"
+        android:onClick="nextLayout"/>
+    <Button
+        android:id="@+id/idBtnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnStart"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:text="LogOut"
+        android:textAllCaps="false"
+        android:onClick="previousLayout"/>
+
+</RelativeLayout>
+

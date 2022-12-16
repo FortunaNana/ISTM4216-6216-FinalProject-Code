@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:id="@+id/Logo"
+        android:layout_gravity="center"
+        android:src="@drawable/glo_beauty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        />
+    <TextView
+        android:id="@+id/CheckOutTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shopping Cart"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/checkoutDetailsTxt"
+        android:inputType="textMultiLine"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:layout_gravity="center"
+        android:text=""
+        android:focusable="false"/>
+
+
+</LinearLayout>
